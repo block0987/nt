@@ -1,0 +1,3 @@
+:not(.tabs-bottom)#browser>footer:after {
+    display: none;
+}

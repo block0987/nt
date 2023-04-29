@@ -1,0 +1,47 @@
+#browser {
+    --color-bg-primary: #181818;
+    --color-bg-secondary: #212121;
+    --color-bg-thirdry: #333333;
+    --color-fg-primary: #ffffff;
+    --color-fg-secondary: #b3b3b3;
+    --color-hover-bg-primary: #2e2e2e;
+    --color-hover-bg-secondary: #363636;
+    --color-accent-primary: #85b8ff;
+    --color-border-primary: #ffffff0f;
+    --color-border-secondary: #ffffff15;
+    --color-tabstack: #ffffff30;
+    --border-primary: 0 0 0 1px var(--color-border-primary);
+    --border-primary-inset: var(--border-primary) inset;
+    --border-primary-bottom: 0 1px var(--color-border-primary);
+    --border-primary-bottom-inset: 0 -1px var(--color-border-primary) inset;
+    --border-primary-top: 0 -1px var(--color-border-primary);
+    --border-primary-top-inset: 0 1px var(--color-border-primary) inset;
+    --border-secondary: 0 0 0 1px var(--color-border-secondary);
+    --border-secondary-inset: var(--border-secondary) inset;
+    --border-secondary-bottom: 0 1px var(--color-border-secondary);
+    --border-secondary-bottom-inset: 0 -1px var(--color-border-secondary) inset;
+    --border-accent-primary: 0 0 0 1px var(--color-accent-primary);
+    --border-accent-primary-inset: var(--border-accent-primary) inset;
+    --border-accent-primary-bottom: 0 1px var(--color-accent-primary);
+    --border-accent-primary-bottom-inset: 0 -1px var(--color-accent-primary) inset;
+    --shadow-primary: 0 6px 18px #0009;
+    --shadow-secondary: 0 6px 9px #0009;
+    --radius-primary: .3rem;
+    --animation-primary: cubic-bezier(0, 0, 0, 1) 0.36s;
+}
+
+:focus, :focus-visible {
+    outline: unset !important;
+}
+
+.hasfocus .vivaldi-tree.no-selection:focus-within:after {
+    content: unset !important;
+}
+
+* {
+    font-family: 'Inter', 'Hiragino Kaku Gothic ProN', 'Noto Sans CJK JP' !important;
+    font-feature-settings: "palt" 1;
+    letter-spacing: -0.027em;
+    font-weight: 400;
+    backdrop-filter: unset !important;
+}

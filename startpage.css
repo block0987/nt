@@ -1,0 +1,87 @@
+/* ヘッダー */
+.startpage .startpage-navigation {
+    background: var(--color-bg-primary);
+    box-shadow: var(--border-primary-bottom), var(--shadow-primary);
+}
+.startpage .startpage-navigation .startpage-navigation-group:last-of-type {
+    border: unset;
+    margin-left: 3px;
+}
+.startpage .startpage-navigation .startpage-navigation-group {
+    gap: 3px;
+}
+.button-startpage {
+    border: unset;
+    -webkit-mask-image: unset;
+    color: var(--color-fg-secondary);
+}
+.button-startpage:hover::before{
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background: var(--color-hover-bg-primary);
+    border-radius: var(--radius-primary);
+    z-index: -1;
+}
+.button-startpage.active::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 100%;
+    height: 37px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-primary);
+    box-shadow: var(--border-primary-inset);
+    z-index: -1;
+}
+.button-startpage.active::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 20%;
+    width: 60%;
+    height: 3px;
+    background: var(--color-accent-primary);
+    border-radius: var(--radius-primary);
+    /* z-index: -1; */
+}
+
+/* カード */
+.speeddial .dial {
+    background: var(--color-bg-secondary);
+    box-shadow: var(--border-primary), var(--shadow-primary);
+    border-radius: var(--radius-primary);
+    transition: var(--animation-primary);
+    opacity: 1 !important;
+}
+.dials-wrapper:not(.dragging-disabled) .speeddial .dial:hover {
+    box-shadow: var(--border-primary);
+}
+.dials-wrapper:not(.dragging-disabled) .speeddial .dial:hover .thumbnail-image>img {
+    filter: brightness(1.2);
+    backdrop-filter: brightness(1.2) !important;
+    transition: var(--animation-primary);
+}
+.speeddial .dial:focus-visible {
+    outline: unset;
+}
+.dials-wrapper:not(.dragging-disabled) .dials .dial:hover,
+.dials-wrapper:not(.dragging-disabled) .dials .dial:focus {
+    margin: unset;
+}
+
+.speeddial .dial.dragging {
+    box-shadow: var(--shadow-secondary);
+    transition: unset !important;
+}
+
+.speeddial .dial>.thumbnail-title {
+    transition: var(--animation-primary);
+    justify-content: center;
+    background: var(--color-bg-thirdry) !important;
+    box-shadow: var(--border-primary-top-inset) !important;
+}
