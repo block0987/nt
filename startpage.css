@@ -1,7 +1,7 @@
 /* ヘッダー */
 .startpage .startpage-navigation {
     background: var(--color-bg-primary);
-    box-shadow: var(--border-primary-bottom), var(--shadow-primary);
+    box-shadow: var(--border-primary-bottom);
 }
 .startpage .startpage-navigation .startpage-navigation-group:last-of-type {
     border: unset;
@@ -12,6 +12,7 @@
 }
 .button-startpage {
     border: unset;
+    mask-image: unset;
     -webkit-mask-image: unset;
     color: var(--color-fg-secondary);
 }

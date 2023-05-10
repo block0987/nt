@@ -1,5 +1,5 @@
 /* ヘッダー */
-.tabs-top.tabs-at-edge#browser:not(.fullscreen, .disable-titlebar) #header {
+.tabs-top#browser.win:not(.fullscreen, .disable-titlebar) #header {
     min-height: 30px;
 }
 #header, #tabs-tabbar-container {
@@ -120,8 +120,12 @@
     margin-bottom: unset;
 }
 .stack-counter {
+    color: var(--color-fg-secondary) !important;
     background-color: transparent !important;
     box-shadow: var(--border-primary) !important;
+}
+.tab.active .stack-counter {
+    color: var(--color-fg-primary) !important;
 }
 
 .tabs-top .tab-position .tab.insubstrip.active:not(.marked) {

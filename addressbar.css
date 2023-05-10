@@ -3,6 +3,7 @@
     height: 30px;
     background: var(--color-bg-primary) !important;
     box-shadow: var(--border-primary-top-inset);
+    border: none !important;
 }
 
 /* URLフィールド */
@@ -92,7 +93,7 @@
 
 /* ポップアップ */
 .toolbar, .toolbar-group, .toolbar-wrap {
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .button-popup {
     background-color: var(--color-bg-primary);
