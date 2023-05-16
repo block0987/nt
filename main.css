@@ -1,15 +1,17 @@
 #browser {
-    --color-bg-primary: #181818;
+    --color-bg-primary: #090909;
     --color-bg-secondary: #212121;
     --color-bg-thirdry: #333333;
     --color-fg-primary: #ffffff;
-    --color-fg-secondary: #b3b3b3;
+    --color-fg-secondary: #d3d3d3;
+    --color-fg-thirdry: #999999;
     --color-hover-bg-primary: #2e2e2e;
     --color-hover-bg-secondary: #363636;
     --color-accent-primary: #85b8ff;
-    --color-border-primary: #ffffff0f;
-    --color-border-secondary: #ffffff15;
-    --color-tabstack: #ffffff30;
+    --color-border-primary: #ffffff1f;
+    --color-border-secondary: #ffffff0f;
+    --color-border-window: #ffffff30;
+    --color-tabstack: #ffffff54;
     --border-primary: 0 0 0 1px var(--color-border-primary);
     --border-primary-inset: var(--border-primary) inset;
     --border-primary-bottom: 0 1px var(--color-border-primary);
@@ -27,6 +29,8 @@
     --shadow-primary: 0 6px 18px #0009;
     --shadow-secondary: 0 6px 9px #0009;
     --radius-primary: .3rem;
+    --filter-background: opacity(.9) saturate(.9);
+    --filter-discarded: opacity(.45) grayscale(.6);
     --animation-primary: cubic-bezier(0, 0, 0, 1) 0.36s;
 }
 

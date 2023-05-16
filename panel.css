@@ -1,0 +1,18 @@
+#panels-container {
+    background-color: var(--color-bg-primary);
+}
+
+#switch .addwebpanel-wrapper>button.active,
+#switch>.button-toolbar.active,
+#switch>*>.button-toolbar.active,
+#switch>button.active {
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.left #switch .addwebpanel-wrapper>button,
+.left #switch>.button-toolbar,
+.left #switch>*>.button-toolbar,
+.left #switch>button {
+    border-radius: var(--radius-primary);
+}

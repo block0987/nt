@@ -80,6 +80,22 @@
     filter: unset;
 }
 
+/* ファビコン(バックグラウンド) */
+.tab:not(.active) .favicon {
+    filter: var(--filter-background);
+}
+.tab:not(.active):hover .favicon {
+    filter: unset;
+}
+
+/* 休止状態 */
+.tab.isdiscarded .favicon {
+    filter: var(--filter-discarded) !important;
+}
+.tab.isdiscarded .title {
+    color: var(--color-fg-thirdry);
+}
+
 /* プログレスバー */
 .page-progress-indicator {
     height: 1px;
