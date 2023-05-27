@@ -28,13 +28,16 @@
     --border-accent-primary-bottom-inset: 0 -1px var(--color-accent-primary) inset;
     --shadow-primary: 0 6px 18px #0009;
     --shadow-secondary: 0 6px 9px #0009;
+    --shadow-float: 0 9px 24px #000;
     --radius-primary: .3rem;
     --filter-background: opacity(.9) saturate(.9);
     --filter-discarded: opacity(.45) grayscale(.6);
     --animation-primary: cubic-bezier(0, 0, 0, 1) 0.36s;
+    --animation-modal-center: Motion-modal-center .2s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal none running;
 }
 
-:focus, :focus-visible {
+:focus,
+:focus-visible {
     outline: unset !important;
 }
 
@@ -45,7 +48,43 @@
 * {
     font-family: 'Inter', 'Hiragino Kaku Gothic ProN', 'Noto Sans CJK JP' !important;
     font-feature-settings: "palt" 1;
-    letter-spacing: -0.027em;
+    letter-spacing: -0.018em;
     font-weight: 400;
     backdrop-filter: unset !important;
+
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: geometricPrecision !important;
+}
+
+/* モーダル */
+#modal-bg.slide {
+    top: 27vh;
+}
+#modal-bg.slide .modal-wrapper {
+    animation: var(--animation-modal-center);
+}
+#modal-bg .modal-wrapper {
+    transform-origin: unset;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-primary) !important;
+    box-shadow: var(--shadow-float), var(--border-primary-inset);
+}
+.dialog-download {
+    background: unset;
+}
+.dialog-footer {
+    background: unset;
+    border: unset;
+}
+
+@keyframes Motion-modal-center {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

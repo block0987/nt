@@ -6,6 +6,10 @@
     border: none !important;
 }
 
+.address-bottom-off .mainbar {
+    display: none;
+}
+
 /* URLフィールド */
 .SearchField,
 .UrlBar-AddressField {
@@ -27,6 +31,18 @@
 .UrlBar-AddressField {
     padding: 0 3px;
 }
+.toolbar-spacer-flexible~.UrlBar-AddressField {
+    flex-grow: 0;
+    flex-basis: 36vw;
+}
+.toolbar-insideinput:has(.ContentBlocker-Control) {
+    display: none;
+}
+.toolbar-insideinput .button-toolbar.drop-down-menu {
+    display: none;
+}
+
+
 
 /* ボタン */
 .toolbar-mainbar .toolbar-extensions>.button-toolbar>button,
@@ -36,7 +52,7 @@
 .toolbar-mainbar .page-zoom-controls>.toolbar-group>.button-toolbar>button,
 .toolbar-mainbar>.toolbar-group>.button-toolbar>button {
     height: 30px;
-    min-width: 30px;
+    min-width: 31px;
 }
 
 .color-behind-tabs-off .toolbar-mainbar .toolbar-extensions,

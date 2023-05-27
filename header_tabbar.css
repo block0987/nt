@@ -18,6 +18,10 @@
     text-align: center;
 }
 
+#header:has(.tabless) .tabbar-wrapper {
+    display: none;
+}
+
 /* タブバー */
 .win .vivaldi,
 .tabs-top#browser.win .window-buttongroup button:not(.vivaldi) {
@@ -78,6 +82,19 @@
 .theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
 .acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
     filter: unset;
+}
+
+.favicon>img, .favicon svg, .tab-audio{
+    transition: var(--animation-primary) !important;
+}
+.tab:not(.active) .favicon>img, .tab:not(.active) .favicon svg, .tab:not(.active) .tab-audio {
+    transform: scale(.81) !important;
+}
+.tab:not(.active):hover .favicon>img, .tab:not(.active):hover .favicon svg, .tab:not(.active):hover .tab-audio:hover {
+    transform: scale(.9) !important;
+}
+.tab:active .favicon>img, .tab:active .favicon svg, .tab:active .tab-audio {
+    transform: scale(.81) !important;
 }
 
 /* ファビコン(バックグラウンド) */
