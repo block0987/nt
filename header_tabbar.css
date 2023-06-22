@@ -25,7 +25,13 @@
 /* タブバー */
 .win .vivaldi,
 .tabs-top#browser.win .window-buttongroup button:not(.vivaldi) {
-    height: 30px;
+    margin: unset;
+    height: 29px;
+}
+.tabs-at-edge.fullscreen.tabs-top#browser.win .window-buttongroup button:not(.vivaldi),
+.tabs-at-edge.maximized.tabs-top#browser.win .window-buttongroup button:not(.vivaldi)
+{
+    height: 29px;
 }
 
 #tabs-tabbar-container:has(#tabs-subcontainer) {
