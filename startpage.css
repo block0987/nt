@@ -59,6 +59,10 @@
     transition: var(--animation-primary);
     opacity: 1 !important;
 }
+.speeddial .dial .thumbnail-image img {
+    object-fit: contain;
+    object-position: center;
+}
 .dials-wrapper:not(.dragging-disabled) .speeddial .dial:hover {
     box-shadow: var(--border-primary);
 }
