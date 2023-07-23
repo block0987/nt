@@ -1,11 +1,13 @@
 /* アドレスバー */
+.mainbar {
+    border: unset !important;
+}
 .mainbar>.toolbar-mainbar {
     height: 30px;
     background: var(--color-bg-primary) !important;
     box-shadow: var(--border-primary-top-inset);
     border: none !important;
 }
-
 .address-bottom-off .mainbar {
     display: none;
 }
