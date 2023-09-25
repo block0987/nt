@@ -22,16 +22,39 @@
     display: none;
 }
 
+/* V */
+.vivaldi .expand-arrow {
+    display: none;
+}
+.vivaldi {
+    width: 30px !important;
+    margin: 0 !important;
+}
+.vivaldi svg {
+    fill: var(--color-fg-secondary);
+}
+.vivaldi:hover svg {
+    fill: var(--color-fg-primary);
+}
+
 /* タブバー */
+.win #tabs-container:not(.none).top {
+    padding-left: 29px;
+}
+
+#tabs-tabbar-container:not(:has(.SlideBar:active)) {
+    transition: unset;
+}
+
 .win .vivaldi,
-.tabs-top#browser.win .window-buttongroup button:not(.vivaldi) {
+.window-buttongroup button:not(.vivaldi) {
     margin: unset;
-    height: 29px;
+    height: 29px !important;
 }
 .tabs-at-edge.fullscreen.tabs-top#browser.win .window-buttongroup button:not(.vivaldi),
 .tabs-at-edge.maximized.tabs-top#browser.win .window-buttongroup button:not(.vivaldi)
 {
-    height: 29px;
+    height: 29px !important;
 }
 
 #tabs-tabbar-container:has(#tabs-subcontainer) {
@@ -82,6 +105,9 @@
 }
 .tab-position:hover .tab .tab-header {
     background: var(--color-hover-bg-primary);
+}
+.tab-position .tab .title {
+    line-height: 1.5;
 }
 
 .transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),

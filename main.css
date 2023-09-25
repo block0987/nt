@@ -30,6 +30,7 @@
     --shadow-secondary: 0 6px 9px #0009;
     --shadow-float: 0 9px 24px #000;
     --radius-primary: .3rem;
+    --radius-secondary: .6rem;
     --filter-background: opacity(.9) saturate(.9);
     --filter-discarded: opacity(.45) grayscale(.6);
     --animation-primary: cubic-bezier(0, 0, 0, 1) 0.36s;

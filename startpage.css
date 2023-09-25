@@ -55,7 +55,7 @@
 .speeddial .dial {
     background: var(--color-bg-secondary);
     box-shadow: var(--border-primary), var(--shadow-primary);
-    border-radius: var(--radius-primary);
+    border-radius: var(--radius-secondary);
     transition: var(--animation-primary);
     opacity: 1 !important;
 }

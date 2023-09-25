@@ -12,6 +12,18 @@
     display: none;
 }
 
+/* アドレスバー(上) */
+#browser.win.address-top .toolbar:has(.window-buttongroup.on-mainbar),
+#browser.linux.address-top .toolbar:has(.window-buttongroup.on-mainbar) {
+    min-height: 30px;
+}
+.disable-titlebar#browser.win .window-buttongroup {
+    height: 30px;
+}
+.address-top .mainbar .toolbar-mainbar {
+    box-shadow: var(--border-primary-bottom-inset);
+}
+
 /* URLフィールド */
 .SearchField,
 .UrlBar-AddressField {
