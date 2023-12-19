@@ -47,13 +47,11 @@
 }
 
 * {
-    font-family: 'Inter medium',
-        'LINE Seed JP_OTF',
+    font-family: 'Inter',
+        'M PLUS 1',
         'Hiragino Kaku Gothic ProN',
         'Noto Sans CJK JP' !important;
-    font-feature-settings: "palt" 1;
-    letter-spacing: -0.018em;
-    font-weight: 400;
+    font-weight: 450;
     backdrop-filter: unset !important;
 
     -webkit-font-smoothing: antialiased !important;

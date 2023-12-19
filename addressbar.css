@@ -25,6 +25,9 @@
 }
 
 /* URLフィールド */
+.UrlField * {
+    font-family: sans-serif !important;
+}
 .SearchField,
 .UrlBar-AddressField {
     border: unset !important;
