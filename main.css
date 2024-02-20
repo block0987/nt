@@ -37,6 +37,27 @@
     --animation-modal-center: Motion-modal-center .2s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal none running;
 }
 
+@media (prefers-color-scheme: light) {
+    #browser {
+        --color-bg-primary: #fdfdff;
+        --color-bg-secondary: #f3f3f6;
+        --color-bg-thirdry: #e9e9ec;
+        --color-fg-primary: #010203;
+        --color-fg-secondary: #363636;
+        --color-fg-thirdry: #545454;
+        --color-hover-bg-primary: #f1f1f3;
+        --color-hover-bg-secondary: #e3e3e6;
+        --color-accent-primary: #1d6eed;
+        --color-border-primary: #00000018;
+        --color-border-secondary: #00000009;
+        --color-border-window: #00000024;
+        --color-tabstack: #00000045;
+        --shadow-primary: 0 6px 18px #0003;
+        --shadow-secondary: 0 6px 9px #0003;
+        --shadow-float: 0 9px 24px #0006;
+    }
+}
+
 :focus,
 :focus-visible {
     outline: unset !important;
@@ -62,18 +83,22 @@
 #modal-bg.slide {
     top: 27vh;
 }
+
 #modal-bg.slide .modal-wrapper {
     animation: var(--animation-modal-center);
 }
+
 #modal-bg .modal-wrapper {
     transform-origin: unset;
     background: var(--color-bg-secondary);
     border-radius: var(--radius-primary) !important;
     box-shadow: var(--shadow-float), var(--border-primary-inset);
 }
+
 .dialog-download {
     background: unset;
 }
+
 .dialog-footer {
     background: unset;
     border: unset;
