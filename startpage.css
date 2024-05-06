@@ -90,3 +90,17 @@
     background: var(--color-bg-thirdry) !important;
     box-shadow: var(--border-primary-top-inset) !important;
 }
+
+
+/* -------------------
+    Light Mode 
+------------------- */
+@media (prefers-color-scheme: light) {
+    .speeddial .dial {
+        background: var(--color-bg-thirdry);
+    }
+    .dials-wrapper:not(.dragging-disabled) .speeddial .dial:hover .thumbnail-image>img {
+        filter: brightness(0.9) saturate(0.9);
+        backdrop-filter: brightness(0.9) saturate(0.9) !important;
+    }
+}

@@ -50,7 +50,7 @@
         --color-accent-primary: #1d6eed;
         --color-border-primary: #00000018;
         --color-border-secondary: #00000009;
-        --color-border-window: #00000024;
+        --color-border-window: #00000009;
         --color-tabstack: #00000045;
         --shadow-primary: 0 6px 18px #0003;
         --shadow-secondary: 0 6px 9px #0003;
@@ -68,10 +68,8 @@
 }
 
 * {
-    font-family: 'Inter',
-        'M PLUS 1',
-        'Hiragino Kaku Gothic ProN',
-        'Noto Sans CJK JP' !important;
+    font-family: 'Inter', 'Noto Sans JP' !important;
+    font-feature-settings: 'palt' 1;
     font-weight: 450;
     backdrop-filter: unset !important;
 
