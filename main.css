@@ -56,6 +56,10 @@
         --shadow-secondary: 0 6px 9px #0003;
         --shadow-float: 0 9px 24px #0006;
     }
+
+    * {
+        text-shadow: 0px 0px 0px #ffffff40 !important;
+    }
 }
 
 :focus,
@@ -75,6 +79,7 @@
 
     -webkit-font-smoothing: antialiased !important;
     text-rendering: geometricPrecision !important;
+    text-shadow: 0px 0px 0px #00000040 !important;
 }
 
 /* モーダル */

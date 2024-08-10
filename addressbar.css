@@ -1,13 +1,15 @@
 /* アドレスバー */
 .mainbar {
     border: unset !important;
-}
-.mainbar>.toolbar-mainbar {
-    height: 30px;
     background: var(--color-bg-primary) !important;
     box-shadow: var(--border-primary-top-inset);
+}
+
+.mainbar>.toolbar-mainbar {
+    height: 30px;
     border: none !important;
 }
+
 .address-bottom-off .mainbar {
     display: none;
 }
@@ -17,9 +19,11 @@
 #browser.linux.address-top .toolbar:has(.window-buttongroup.on-mainbar) {
     min-height: 30px;
 }
+
 .disable-titlebar#browser.win .window-buttongroup {
     height: 30px;
 }
+
 .address-top .mainbar .toolbar-mainbar {
     box-shadow: var(--border-primary-bottom-inset);
 }
@@ -28,6 +32,7 @@
 .UrlField * {
     font-family: sans-serif !important;
 }
+
 .SearchField,
 .UrlBar-AddressField {
     border: unset !important;
@@ -35,26 +40,32 @@
     background: var(--color-bg-primary);
     transition: var(--animation-primary);
 }
+
 .UrlBar-AddressField:hover {
     background: var(--color-hover-bg-primary);
 }
+
 .color-behind-tabs-off .SearchField:focus-within,
 .color-behind-tabs-off .UrlBar-AddressField:focus-within {
     outline: unset;
     box-shadow: var(--border-accent-primary-inset);
     background: var(--color-bg-secondary);
 }
+
 .UrlBar-SearchField,
 .UrlBar-AddressField {
     padding: 0 3px;
 }
+
 .toolbar-spacer-flexible~.UrlBar-AddressField {
     flex-grow: 0;
     flex-basis: 36vw;
 }
+
 .toolbar-insideinput:has(.ContentBlocker-Control) {
     display: none;
 }
+
 .toolbar-insideinput .button-toolbar.drop-down-menu {
     display: none;
 }
@@ -113,10 +124,12 @@
 }
 
 /* 拡張機能 */
-.toolbar-large .button-toolbar>button>.button-badge, .button-toolbar>button>.button-badge {
+.toolbar-large .button-toolbar>button>.button-badge,
+.button-toolbar>button>.button-badge {
     top: 1px;
     right: -1.5px;
 }
+
 .button-badge {
     background: var(--color-bg-thirdry) !important;
     color: var(--color-text-primary) !important;
@@ -125,31 +138,39 @@
 }
 
 /* ポップアップ */
-.toolbar, .toolbar-group, .toolbar-wrap {
+.toolbar,
+.toolbar-group,
+.toolbar-wrap {
     justify-content: center;
 }
+
 .button-popup {
     background-color: var(--color-bg-primary);
     box-shadow: var(--border-secondary-inset), var(--shadow-secondary);
     border-radius: var(--radius-primary);
 }
+
 .button-popup:before {
     display: none;
 }
 
-.theme-dark .WorkspacePopup, .button-popup.ToolbarButtonPopup-DefaultStyles h2 {
+.theme-dark .WorkspacePopup,
+.button-popup.ToolbarButtonPopup-DefaultStyles h2 {
     background: unset !important;
     border: unset;
     box-shadow: var(--border-primary-bottom);
 }
+
 .WorkspacePopup-Items .workspace-item-wrapper:hover,
 .WorkspacePopup-Items .this-window:hover {
     background: var(--color-hover-bg-primary);
     border-radius: var(--radius-primary);
 }
+
 .PageTiling-Button:hover {
     background: unset;
 }
+
 .PageTiling-Button:hover::before {
     content: "";
     position: absolute;
