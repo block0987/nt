@@ -2,10 +2,10 @@
     background-color: var(--color-bg-primary);
 }
 
-#switch .addwebpanel-wrapper>button.active,
-#switch>.button-toolbar.active,
-#switch>*>.button-toolbar.active,
-#switch>button.active {
+#browser:not(.density-on) #switch .addwebpanel-wrapper>button.active,
+#browser:not(.density-on) #switch>.button-toolbar.active,
+#browser:not(.density-on) #switch>*>.button-toolbar.active,
+#browser:not(.density-on) #switch>button.active {
     background-color: unset;
     box-shadow: unset;
 }

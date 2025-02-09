@@ -62,13 +62,13 @@
     flex-basis: 36vw;
 }
 
-.toolbar-insideinput:has(.ContentBlocker-Control) {
+/* .toolbar-insideinput:has(.ContentBlocker-Control) {
     display: none;
 }
 
 .toolbar-insideinput .button-toolbar.drop-down-menu {
     display: none;
-}
+} */
 
 
 

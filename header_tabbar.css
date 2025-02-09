@@ -1,8 +1,4 @@
 /* ヘッダー */
-.tabs-top#browser.win:not(.fullscreen, .disable-titlebar) #header {
-    min-height: 30px;
-}
-
 #header,
 #tabs-tabbar-container {
     background: var(--color-bg-primary) !important;
@@ -13,7 +9,7 @@
 }
 
 #tabs-tabbar-container {
-    padding-top: unset !important;
+    padding-top: 0px !important;
     border: unset;
     box-shadow: var(--border-primary-bottom-inset);
 }
@@ -46,36 +42,12 @@
 }
 
 /* タブバー */
+.tabs-top#browser.win:not(.fullscreen, .disable-titlebar) #header {
+    min-height: 0px;
+}
+
 .win #tabs-container:not(.none).top {
-    padding-left: 29px;
-}
-
-#tabs-tabbar-container:not(:has(.SlideBar:active)) {
-    transition: unset;
-}
-
-.win .vivaldi,
-.window-buttongroup button:not(.vivaldi) {
-    margin: unset;
-    height: 29px !important;
-}
-
-.tabs-at-edge.fullscreen.tabs-top#browser.win .window-buttongroup button:not(.vivaldi),
-.tabs-at-edge.maximized.tabs-top#browser.win .window-buttongroup button:not(.vivaldi) {
-    height: 29px !important;
-}
-
-#tabs-tabbar-container:has(#tabs-subcontainer) {
-    height: 57px !important;
-}
-
-#tabs-subcontainer {
-    flex-basis: 27px !important;
-}
-
-#tabs-subcontainer.visible,
-#tabs-subcontainer .ToolbarButton-Button {
-    min-height: unset !important;
+    padding-left: 30px;
 }
 
 #tabs-subcontainer {
@@ -93,24 +65,12 @@
     background: unset !important;
 }
 
-.tabs-top .tab-position .tab,
-.tabs-bottom .tab-position .tab {
-    margin: unset !important;
-}
-
 .tab::before,
 .tab::after {
     display: none !important;
 }
 
 .tab-position .tab .tab-header {
-    flex: 1 1 24px;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 3px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-left: 4.5px;
     border-radius: var(--radius-primary);
     color: var(--color-fg-secondary);
 }
@@ -222,10 +182,6 @@
     background: var(--color-tabstack);
 }
 
-.tab-position.is-substack>.tab.active {
-    margin-bottom: unset;
-}
-
 .stack-counter {
     color: var(--color-fg-secondary) !important;
     background-color: transparent !important;
@@ -234,36 +190,4 @@
 
 .tab.active .stack-counter {
     color: var(--color-fg-primary) !important;
-}
-
-.tabs-top .tab-position .tab.insubstrip.active:not(.marked) {
-    padding-bottom: 0;
-}
-
-.tabs-top .tab-position .tab.insubstrip,
-.tabs-bottom .tab-position .tab.insubstrip {
-    margin: 0;
-}
-
-.tabs-top .tab-position .tab.insubstrip .tab-header,
-.tabs-bottom .tab-position .tab.insubstrip .tab-header {
-    margin-bottom: 3px;
-    margin-left: 3px;
-    margin-top: 0;
-    margin-right: 0;
-}
-
-#browser:not(.alt-tabs) #tabs-container .tab-audio,
-#browser:not(.alt-tabs) #tabs-container .tab.pinned:not(.active) .tab-audio,
-#browser:not(.alt-tabs) #tabs-subcontainer .tab-audio,
-#browser:not(.alt-tabs) #tabs-subcontainer .tab.pinned:not(.active) .tab-audio {
-    top: 4px;
-}
-
-#tabs-subcontainer .button-toolbar.newtab {
-    top: -2px !important;
-}
-
-#tabs-subcontainer .button-toolbar>button {
-    height: 27px !important;
 }
