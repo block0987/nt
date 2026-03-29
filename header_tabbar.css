@@ -9,7 +9,7 @@
 }
 
 #tabs-tabbar-container {
-    padding-top: 0px !important;
+    padding: 3px 0 !important;
     border: unset;
     box-shadow: var(--border-primary-bottom-inset);
 }
@@ -23,6 +23,10 @@
     display: none;
 }
 
+#header .toolbar {
+    gap: 0.5px !important;
+}
+
 /* V */
 .vivaldi .expand-arrow {
     display: none;
@@ -30,7 +34,7 @@
 
 .vivaldi {
     width: 30px !important;
-    margin: 0 !important;
+    grid-template-columns: 30px !important;
 }
 
 .vivaldi svg {
@@ -46,10 +50,6 @@
     min-height: 0px;
 }
 
-.win #tabs-container:not(.none).top {
-    padding-left: 30px;
-}
-
 #tabs-subcontainer {
     background-color: unset !important;
 }
@@ -59,10 +59,25 @@
     box-shadow: unset;
 }
 
+.tabs-top #tabs-container .resize,
+.tabs-bottom #tabs-container .resize {
+    margin: 0;
+}
+
+#tabs-container .toolbar-tabbar-before,
+#tabs-container .toolbar-tabbar-after {
+    padding: 0 !important;
+}
+
+.subcontainer-lock {
+    justify-content: space-between;
+}
+
 
 /* タブ */
 .tab-position .tab {
     background: unset !important;
+    border-radius: unset !important;
 }
 
 .tab::before,
@@ -122,6 +137,13 @@
 .tab:active .favicon svg,
 .tab:active .tab-audio {
     transform: scale(.81);
+}
+
+.tabs-top #tabs-container .toolbar-tabbar-before.modifier:empty,
+.tabs-top #tabs-container .toolbar-tabbar-after.modifier:empty,
+.tabs-bottom #tabs-container .toolbar-tabbar-before.modifier:empty,
+.tabs-bottom #tabs-container .toolbar-tabbar-after.modifier:empty {
+    width: 0;
 }
 
 /* ファビコン(バックグラウンド) */
@@ -190,4 +212,9 @@
 
 .tab.active .stack-counter {
     color: var(--color-fg-primary) !important;
+}
+
+/* ウィンドウボタン */
+.tabs-top:not(.popup, .horizontal-menu)#browser.win .window-buttongroup button {
+    height: 35px !important;
 }

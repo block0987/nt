@@ -57,6 +57,29 @@
     /* z-index: -1; */
 }
 
+/* ダッシュボード */
+.Dashboard-Widgets .dashboard-widget {
+    backdrop-filter: blur(64px) saturate(0.6) !important;
+    box-shadow: var(--border-primary-inset), var(--shadow-primary);
+    border-radius: var(--radius-secondary);
+}
+
+.Dashboard .shortcut-list .item,
+.Dashboard .top-sites-wrapper .item {
+    box-shadow: var(--border-secondary-inset);
+    border-radius: var(--radius-secondary);
+}
+
+.Dashboard .shortcut-list .item:hover,
+.Dashboard .top-sites-wrapper .item:hover {
+    box-shadow: var(--border-primary);
+}
+
+.Dashboard .shortcut-list .item .icon-wrapper img,
+.Dashboard .top-sites-wrapper .item .icon-wrapper img {
+    filter: drop-shadow(0 0 .3px #9999);
+}
+
 /* カード */
 .speeddial .dial {
     background: var(--color-bg-secondary);

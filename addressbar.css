@@ -29,6 +29,13 @@
 }
 
 /* URLフィールド */
+.tabs-top #tabs-container .toolbar-tabbar-before .UrlBar-AddressField,
+.tabs-top #tabs-container .toolbar-tabbar-after .UrlBar-AddressField,
+.tabs-bottom #tabs-container .toolbar-tabbar-before .UrlBar-AddressField,
+.tabs-bottom #tabs-container .toolbar-tabbar-after .UrlBar-AddressField {
+    max-width: 630px;
+}
+
 .UrlField * {
     font-family: sans-serif !important;
 }
@@ -60,6 +67,11 @@
 .toolbar-spacer-flexible~.UrlBar-AddressField {
     flex-grow: 0;
     flex-basis: 36vw;
+}
+
+.ContentBlocker-Label-Icon,
+.ContentBlocker-Control {
+    display: none;
 }
 
 /* .toolbar-insideinput:has(.ContentBlocker-Control) {
@@ -121,6 +133,12 @@
     box-shadow: var(--border-primary-inset);
     border-radius: var(--radius-primary);
     z-index: -1;
+}
+
+/* ワークスペース */
+.tabs-top .button-toolbar.workspace-popup.tabbar-workspace-button,
+.tabs-bottom .button-toolbar.workspace-popup.tabbar-workspace-button {
+    margin: 0 !important;
 }
 
 /* 拡張機能 */

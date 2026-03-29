@@ -72,9 +72,9 @@
 }
 
 * {
-    font-family: 'Inter', 'Noto Sans JP' !important;
+    font-family: 'Geist', 'Noto Sans JP' !important;
     font-feature-settings: 'palt' 1;
-    font-weight: 450;
+    font-weight: 600;
     backdrop-filter: unset !important;
 
     -webkit-font-smoothing: antialiased !important;
